@@ -1,0 +1,12 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# Materialy zrodlowe od klientki (CV, arkusze) - nie trafiaja do repo
+*.pdf
+*.xlsx
+*.xls
+*.docx

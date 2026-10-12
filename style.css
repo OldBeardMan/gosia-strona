@@ -1,0 +1,20 @@
+body{padding-top:56px;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1}
+section{scroll-margin-top:56px}
+.navbar{background:#1f5f4f}
+.hero{background:#f1f5f3}
+.hero img{width:180px;height:180px;object-fit:cover}
+.page-head{background:#f1f5f3}
+.btn-green{background:#1f5f4f;border-color:#1f5f4f;color:#fff}
+.btn-green:hover{background:#174a3d;border-color:#174a3d;color:#fff}
+.lang-switch .btn{--bs-btn-padding-y:.15rem;--bs-btn-padding-x:.5rem;--bs-btn-font-size:.8rem}
+.lang-switch .btn.active{background:#fff;color:#1f5f4f;border-color:#fff}
+
+/* Realizacja strony – MatIf (logo, pod nim domena) */
+.fcredit{margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:center}
+.credit{display:inline-flex;flex-direction:column;align-items:center;gap:9px;text-align:center;text-decoration:none}
+.credit-by{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:#8494a6}
+.credit img{display:block;height:26px;width:auto;opacity:.85;transition:transform .2s,opacity .2s}
+.credit-dom{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.74rem;letter-spacing:.08em;color:#f8f9fa;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:2px;transition:border-color .18s,color .18s}
+.credit:hover .credit-dom{color:#d9a43a;border-color:#d9a43a}
+.credit:hover img{transform:translateY(-2px);opacity:1}
