@@ -151,7 +151,7 @@
         <h2 class="mb-4">Certyfikaty i kursy</h2>
         <ul class="list-group">
           <li class="list-group-item">PVsyst – Training Certificate</li>
-          <li class="list-group-item">WindPRO</li>
+          <li class="list-group-item">windPRO BASIS i EYA – EMD</li>
           <li class="list-group-item">GIS w obszarze OZE (QGIS) – GIS Support</li>
           <li class="list-group-item">Energy Storage Essentials – DNV</li>
           <li class="list-group-item">Cambridge Advanced English (CAE) – C1</li>
@@ -164,6 +164,79 @@
     </div>
   </div>
 </section>
+<section class="py-5 border-top" id="dokumenty">
+  <div class="container">
+    <h2 class="mb-4">Certyfikaty i rekomendacje</h2>
+    <h5 class="text-muted mb-3">Certyfikaty</h5>
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/pvsyst.jpg" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="PVsyst Training Certificate">
+          <img src="certyfikaty/pvsyst.jpg" alt="PVsyst Training Certificate" loading="lazy">
+          <span class="doc-caption"><strong>PVsyst Training Certificate</strong><small>PVsyst SA · 2022</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/windpro-basis.png" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="windPRO BASIS">
+          <img src="certyfikaty/windpro-basis.png" alt="windPRO BASIS" loading="lazy">
+          <span class="doc-caption"><strong>windPRO BASIS</strong><small>EMD · 2025</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/windpro-eya.png" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="windPRO EYA">
+          <img src="certyfikaty/windpro-eya.png" alt="windPRO EYA" loading="lazy">
+          <span class="doc-caption"><strong>windPRO EYA</strong><small>EMD · 2025</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/dnv-energy-storage.jpg" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="Energy Storage Essentials">
+          <img src="certyfikaty/dnv-energy-storage.jpg" alt="Energy Storage Essentials" loading="lazy">
+          <span class="doc-caption"><strong>Energy Storage Essentials</strong><small>DNV Energy Academy · 2024</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/ey-project-management.jpg" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="Practical Project Management">
+          <img src="certyfikaty/ey-project-management.jpg" alt="Practical Project Management" loading="lazy">
+          <span class="doc-caption"><strong>Practical Project Management</strong><small>EY Academy of Business · 2023</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/akademia-liderek-esg.jpg" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="Akademia Liderek ESG">
+          <img src="certyfikaty/akademia-liderek-esg.jpg" alt="Akademia Liderek ESG" loading="lazy">
+          <span class="doc-caption"><strong>Akademia Liderek ESG</strong><small>I edycja · Fundacja Lesława Pagi</small></span>
+        </a>
+      </div>
+    </div>
+    <h5 class="text-muted mb-3">Rekomendacje</h5>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/rekomendacja-pvsyst.png" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="Rekomendacja – PVsyst SA">
+          <img src="certyfikaty/rekomendacja-pvsyst.png" alt="Rekomendacja – PVsyst SA" loading="lazy">
+          <span class="doc-caption"><strong>Rekomendacja – PVsyst SA</strong><small>Michel Villoz, Training Manager</small></span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="certyfikaty/list-polecajacy-keno.jpg" class="doc-thumb" data-bs-toggle="modal" data-bs-target="#docModal" data-title="List polecający – KENO Energia">
+          <img src="certyfikaty/list-polecajacy-keno.jpg" alt="List polecający – KENO Energia" loading="lazy">
+          <span class="doc-caption"><strong>List polecający – KENO Energia</strong><small>Wiceprezes Zarządu</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="docModal" tabindex="-1" aria-labelledby="docModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="docModalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="docModalImg" class="img-fluid" src="" alt="">
+      </div>
+    </div>
+  </div>
+</div>
 </main>
 
 <footer class="bg-dark text-light py-4" id="kontakt">
@@ -184,5 +257,13 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById('docModal').addEventListener('show.bs.modal', function (e) {
+  var a = e.relatedTarget, img = document.getElementById('docModalImg');
+  img.src = a.getAttribute('href');
+  img.alt = a.dataset.title;
+  document.getElementById('docModalTitle').textContent = a.dataset.title;
+});
+</script>
 </body>
 </html>
